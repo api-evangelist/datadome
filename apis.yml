@@ -1,0 +1,274 @@
+aid: datadome
+name: DataDome
+description: |
+  DataDome is a real-time bot and online fraud protection platform that
+  inspects every web, mobile, and API request and decides — within
+  milliseconds — whether it should be allowed, challenged, or blocked.
+  The platform combines a JavaScript tag and mobile SDKs (iOS, Android,
+  React Native, Flutter) on the client side with 40+ server-side
+  integrations (Nginx, Apache, IIS, OpenResty, HAProxy, Cloudflare
+  Workers, AWS CloudFront, Fastly, Bunny, Node.js, Python ASGI, Go,
+  Ruby, Java, ASP.NET Core, Kong, Apigee, Tyk, Traefik) that forward
+  signals to DataDome's decisioning service. Products in the platform
+  include Bot Protect, Account Protect, Ad Protect, Page Protect,
+  Priority Protect, Agentic Trust (governing AI agent traffic), and
+  DDoS Protect.
+type: Index
+position: Provider
+access: Commercial
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Bot Mitigation
+  - Fraud Protection
+  - Account Protection
+  - Ad Fraud
+  - DDoS
+  - Real-Time
+  - Edge Security
+  - Application Security
+  - Agentic Trust
+url: https://raw.githubusercontent.com/api-evangelist/datadome/refs/heads/main/apis.yml
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.20'
+apis:
+  - aid: datadome:bot-protect
+    name: DataDome Bot Protect
+    description: |
+      Bot Protect is DataDome's core bot management product, scoring
+      every request against the platform's threat intelligence and
+      machine-learning models to classify and block automated traffic
+      (scraping, credential stuffing, inventory hoarding, fake account
+      creation, content theft) without adding latency to good traffic.
+    humanURL: https://datadome.co/products/bot-protect/
+    baseURL: https://datadome.co
+    tags:
+      - Bot Management
+      - Scraping
+      - Credential Stuffing
+      - ML
+    properties:
+      - type: ProductPage
+        url: https://datadome.co/products/bot-protect/
+      - type: Documentation
+        url: https://docs.datadome.co/
+  - aid: datadome:account-protect
+    name: DataDome Account Protect
+    description: |
+      Account Protect targets account takeover, fake account creation,
+      and post-login abuse using behavioral, device, and credential
+      signals layered on top of the Bot Protect decisioning core.
+    humanURL: https://datadome.co/products/account-protect/
+    baseURL: https://datadome.co
+    tags:
+      - ATO
+      - Account Protection
+      - Fraud
+    properties:
+      - type: ProductPage
+        url: https://datadome.co/products/account-protect/
+      - type: Documentation
+        url: https://docs.datadome.co/
+  - aid: datadome:ad-protect
+    name: DataDome Ad Protect
+    description: |
+      Ad Protect filters invalid traffic from ad-supported properties
+      and protects publishers and advertisers from automated click and
+      impression fraud, leveraging the same signal pipeline as Bot
+      Protect.
+    humanURL: https://datadome.co/products/ad-protect/
+    baseURL: https://datadome.co
+    tags:
+      - Ad Fraud
+      - IVT
+      - Click Fraud
+    properties:
+      - type: ProductPage
+        url: https://datadome.co/products/ad-protect/
+      - type: Documentation
+        url: https://docs.datadome.co/
+  - aid: datadome:page-protect
+    name: DataDome Page Protect
+    description: |
+      Page Protect provides client-side security and Magecart / formjacking
+      defense, inventorying third-party scripts and detecting unauthorized
+      data exfiltration from sensitive pages such as checkout and account.
+    humanURL: https://datadome.co/products/page-protect/
+    baseURL: https://datadome.co
+    tags:
+      - Client-Side Security
+      - PCI DSS 4
+      - Magecart
+      - Supply Chain
+    properties:
+      - type: ProductPage
+        url: https://datadome.co/products/page-protect/
+      - type: Documentation
+        url: https://docs.datadome.co/
+  - aid: datadome:agentic-trust
+    name: DataDome Agentic Trust
+    description: |
+      Agentic Trust is DataDome's product for managing AI-agent traffic,
+      letting customers identify, authenticate, and govern interactions
+      from autonomous agents and LLM-driven crawlers against their web
+      and API surfaces.
+    humanURL: https://datadome.co/products/agentic-trust/
+    baseURL: https://datadome.co
+    tags:
+      - AI Agents
+      - LLM
+      - Agentic Traffic
+      - Governance
+    properties:
+      - type: ProductPage
+        url: https://datadome.co/products/agentic-trust/
+      - type: Documentation
+        url: https://docs.datadome.co/
+  - aid: datadome:ddos-protect
+    name: DataDome DDoS Protect
+    description: |
+      DDoS Protect mitigates application-layer denial-of-service attacks
+      using the same edge-distributed signal pipeline as Bot Protect,
+      defending APIs and web properties against high-volume automated
+      campaigns.
+    humanURL: https://datadome.co/products/ddos-protect/
+    baseURL: https://datadome.co
+    tags:
+      - DDoS
+      - Layer 7
+      - Availability
+    properties:
+      - type: ProductPage
+        url: https://datadome.co/products/ddos-protect/
+      - type: Documentation
+        url: https://docs.datadome.co/
+  - aid: datadome:js-tag
+    name: DataDome JavaScript Tag
+    description: |
+      The DataDome JS tag collects browser, device, and behavioral
+      signals that are forwarded to the DataDome decisioning service.
+      The tag is configured per property and loaded asynchronously to
+      avoid impacting page performance.
+    humanURL: https://docs.datadome.co/docs/integration-js-tag
+    baseURL: https://js.datadome.co
+    tags:
+      - JavaScript Tag
+      - Client Signals
+      - Frontend
+    properties:
+      - type: Documentation
+        url: https://docs.datadome.co/docs/integration-js-tag
+  - aid: datadome:server-modules
+    name: DataDome Server Modules & SDKs
+    description: |
+      DataDome ships 40+ server-side integrations (web servers, CDNs,
+      application frameworks, API gateways) that forward each request
+      to the DataDome decisioning service and apply the returned verdict.
+      These cover Nginx, Apache, IIS, OpenResty, HAProxy, Cloudflare
+      Workers, AWS CloudFront, Fastly, Bunny, Node.js, Python ASGI, Go,
+      Ruby, Java, ASP.NET Core, Kong, Apigee, Tyk, and Traefik.
+    humanURL: https://docs.datadome.co/docs/integration-overview
+    baseURL: https://docs.datadome.co
+    tags:
+      - Server SDK
+      - CDN
+      - API Gateway
+      - Reverse Proxy
+    properties:
+      - type: Documentation
+        url: https://docs.datadome.co/docs/integration-overview
+      - type: GitHubOrganization
+        url: https://github.com/DataDome
+  - aid: datadome:mobile-sdks
+    name: DataDome Mobile SDKs
+    description: |
+      Native iOS and Android SDKs (with React Native and Flutter
+      wrappers) integrate with common HTTP libraries (OkHttp, Alamofire,
+      Axios, Dio) so DataDome verdicts can be applied to mobile API
+      traffic, not just web requests.
+    humanURL: https://docs.datadome.co/docs/integration-mobile-sdk
+    baseURL: https://docs.datadome.co
+    tags:
+      - Mobile SDK
+      - iOS
+      - Android
+      - React Native
+      - Flutter
+    properties:
+      - type: Documentation
+        url: https://docs.datadome.co/docs/integration-mobile-sdk
+      - type: GitHubOrganization
+        url: https://github.com/DataDome
+features:
+  - name: Real-Time Decisioning
+    description: Per-request verdicts returned in sub-millisecond windows at the edge.
+  - name: Wide Integration Footprint
+    description: 40+ server-side and edge integrations covering web servers, CDNs, frameworks, and API gateways.
+  - name: Mobile SDK Coverage
+    description: iOS, Android, React Native, and Flutter SDKs extend protection to native mobile traffic.
+  - name: Threat Intelligence Network
+    description: Shared signals across the DataDome customer base power continuously updated bot intelligence.
+  - name: Agentic Trust
+    description: Dedicated controls for governing AI-agent and LLM-driven traffic.
+  - name: PCI DSS 4 Client-Side Coverage
+    description: Page Protect supports compliance with PCI DSS 4.0 client-side script governance requirements.
+useCases:
+  - name: Bot and Scraping Defense
+    description: Block credential stuffing, scraping, inventory hoarding, and fake-account creation on web and APIs.
+  - name: Account Takeover Prevention
+    description: Detect and block ATO attempts at login and post-login flows.
+  - name: Ad Fraud Mitigation
+    description: Filter invalid traffic from ad-funded properties.
+  - name: Client-Side Supply Chain Security
+    description: Inventory and govern third-party scripts on sensitive pages.
+  - name: AI Agent Governance
+    description: Identify, authenticate, and rate-limit autonomous agent traffic.
+  - name: DDoS Mitigation
+    description: Defend against application-layer denial-of-service attacks.
+integrations:
+  - name: Nginx
+  - name: Apache
+  - name: IIS
+  - name: HAProxy
+  - name: Cloudflare Workers
+  - name: AWS CloudFront
+  - name: Fastly
+  - name: Kong
+  - name: Apigee
+  - name: Tyk
+  - name: Traefik
+  - name: Node.js
+  - name: Python ASGI
+  - name: Go
+  - name: Ruby
+  - name: Java
+  - name: ASP.NET Core
+authentication:
+  - type: APIKey
+    description: DataDome dashboard-issued API keys for server-side modules.
+  - type: SignedSensor
+    description: Signed payloads exchanged between the JS tag/mobile SDK and DataDome decisioning.
+common:
+  - type: Website
+    url: https://datadome.co/
+  - type: Products
+    url: https://datadome.co/products/
+  - type: Documentation
+    url: https://docs.datadome.co/
+  - type: APIReference
+    url: https://docs.datadome.co/reference
+  - type: Blog
+    url: https://datadome.co/blog/
+  - type: GitHubOrganization
+    url: https://github.com/DataDome
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/datadome/
+  - type: Twitter
+    url: https://twitter.com/datadome
+  - type: Status
+    url: https://status.datadome.co/
+  - type: Contact
+    url: https://datadome.co/contact/
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
