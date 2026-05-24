@@ -269,6 +269,8 @@ common:
     url: https://status.datadome.co/
   - type: Contact
     url: https://datadome.co/contact/
+  - type: LLMsTxt
+    url: https://docs.datadome.co/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
