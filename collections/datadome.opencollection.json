@@ -1,0 +1,569 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "DataDome Management API",
+    "version": "1.1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "x-api-key",
+      "value": "{{x-api-key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Account",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve account parameters",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/1.0/account-settings"
+          },
+          "docs": "Retrieve account parameters"
+        },
+        {
+          "info": {
+            "name": "Update account parameters",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api-management.datadome.co/1.0/account-settings",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update account parameters"
+        },
+        {
+          "info": {
+            "name": "List account endpoints",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/1.0/account-endpoints"
+          },
+          "docs": "List account endpoints"
+        },
+        {
+          "info": {
+            "name": "Get account usage metrics",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/1.0/account-usage"
+          },
+          "docs": "Get account usage metrics"
+        },
+        {
+          "info": {
+            "name": "Get account usage by endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/1.0/account-usage-by-endpoint"
+          },
+          "docs": "Get account usage by endpoint"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Endpoints",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List endpoints",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/1.0/endpoints"
+          },
+          "docs": "List endpoints"
+        },
+        {
+          "info": {
+            "name": "Create endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api-management.datadome.co/1.0/endpoints",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create endpoint"
+        },
+        {
+          "info": {
+            "name": "Get endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/1.0/endpoints/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get endpoint"
+        },
+        {
+          "info": {
+            "name": "Update endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api-management.datadome.co/1.0/endpoints/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update endpoint"
+        },
+        {
+          "info": {
+            "name": "Delete endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api-management.datadome.co/1.0/endpoints/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete endpoint"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "CustomRules",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List custom rules",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/1.1/protection/custom-rules"
+          },
+          "docs": "List custom rules"
+        },
+        {
+          "info": {
+            "name": "Create custom rule",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api-management.datadome.co/1.1/protection/custom-rules",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create custom rule"
+        },
+        {
+          "info": {
+            "name": "Update custom rule",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api-management.datadome.co/1.1/protection/custom-rules/:customRuleId",
+            "params": [
+              {
+                "name": "customRuleId",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update custom rule"
+        },
+        {
+          "info": {
+            "name": "Delete custom rule",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api-management.datadome.co/1.1/protection/custom-rules/:customRuleId",
+            "params": [
+              {
+                "name": "customRuleId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete custom rule"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "TrustedProxies",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List trusted proxies",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/1.1/protection/trustedproxies"
+          },
+          "docs": "List trusted proxies"
+        },
+        {
+          "info": {
+            "name": "Add trusted proxy",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api-management.datadome.co/1.1/protection/trustedproxies",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Add trusted proxy"
+        },
+        {
+          "info": {
+            "name": "Update trusted proxy",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api-management.datadome.co/1.1/protection/trustedproxies/:trustedProxyId",
+            "params": [
+              {
+                "name": "trustedProxyId",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update trusted proxy"
+        },
+        {
+          "info": {
+            "name": "Remove trusted proxy",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api-management.datadome.co/1.1/protection/trustedproxies/:trustedProxyId",
+            "params": [
+              {
+                "name": "trustedProxyId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Remove trusted proxy"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "VerifiedModels",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List verified models (Agentic Trust)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/1.1/protection/verified-models"
+          },
+          "docs": "List verified models (Agentic Trust)"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Priorities",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List priorities (Priority Protect)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/priorities"
+          },
+          "docs": "List priorities (Priority Protect)"
+        },
+        {
+          "info": {
+            "name": "Create priority",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api-management.datadome.co/priorities",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create priority"
+        },
+        {
+          "info": {
+            "name": "Retrieve a priority",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/priorities/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a priority"
+        },
+        {
+          "info": {
+            "name": "Update a priority",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api-management.datadome.co/priorities/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update a priority"
+        },
+        {
+          "info": {
+            "name": "Delete a priority",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api-management.datadome.co/priorities/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a priority"
+        },
+        {
+          "info": {
+            "name": "Get priority metrics",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/priorities/:id/metrics",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get priority metrics"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Templates",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List templates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/templates"
+          },
+          "docs": "List templates"
+        },
+        {
+          "info": {
+            "name": "Create template",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api-management.datadome.co/templates",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create template"
+        },
+        {
+          "info": {
+            "name": "Retrieve a template",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/templates/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a template"
+        },
+        {
+          "info": {
+            "name": "Update a template",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api-management.datadome.co/templates/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update a template"
+        },
+        {
+          "info": {
+            "name": "Delete a template",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api-management.datadome.co/templates/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a template"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "AccountProtect",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Submit feedback on Account Protect decisions",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api-management.datadome.co/account-protect/decision-feedback",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Submit feedback on Account Protect decisions"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

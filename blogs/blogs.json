@@ -2,10 +2,20 @@
   "repo": "datadome",
   "feeds": [
     {
+      "source": "https://datadome.co/blog/feed/",
+      "feed_url": "https://datadome.co/blog/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
       "source": "https://docs.datadome.co/reference",
-      "error": "HTTPError"
+      "feed_url": "https://docs.datadome.co/reference",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-06-01T23:35:02Z"
+  "post_count": 2,
+  "fetched": "2026-06-14T20:42:17Z"
 }
