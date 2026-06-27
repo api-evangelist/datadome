@@ -269,7 +269,7 @@ common:
     url: https://status.datadome.co/
   - type: Contact
     url: https://datadome.co/contact/
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://docs.datadome.co/llms.txt
 maintainers:
   - FN: Kin Lane
