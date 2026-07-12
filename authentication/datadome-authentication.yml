@@ -1,0 +1,16 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/datadome-openapi.yml
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+schemes:
+- name: apiKey
+  type: apiKey
+  in: header
+  parameter: x-api-key
+  description: DataDome management API key issued in the customer dashboard.
+  sources:
+  - openapi/datadome-openapi.yml

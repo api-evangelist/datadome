@@ -249,6 +249,10 @@ authentication:
   - type: SignedSensor
     description: Signed payloads exchanged between the JS tag/mobile SDK and DataDome decisioning.
 common:
+  - type: DomainSecurity
+    url: security/datadome-domain-security.yml
+  - type: Authentication
+    url: authentication/datadome-authentication.yml
   - type: Website
     url: https://datadome.co/
   - type: Products
