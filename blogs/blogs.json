@@ -2,13 +2,14 @@
   "repo": "datadome",
   "feeds": [
     {
-      "source": "https://datadome.co/blog/",
-      "feed_url": "",
-      "saved": 1,
-      "method": "agent-scrape"
+      "source": "https://docs.datadome.co/reference",
+      "feed_url": "https://docs.datadome.co/reference",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
   "post_count": 6,
-  "fetched": "2026-06-27T12:35:01Z",
+  "fetched": "2026-07-11T11:50:51Z",
   "agent_pulled": "2026-06-27"
 }
