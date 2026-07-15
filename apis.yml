@@ -249,6 +249,8 @@ authentication:
   - type: SignedSensor
     description: Signed payloads exchanged between the JS tag/mobile SDK and DataDome decisioning.
 common:
+  - type: AgenticAccess
+    url: agentic-access/datadome-agentic-access.yml
   - type: DomainSecurity
     url: security/datadome-domain-security.yml
   - type: Authentication
