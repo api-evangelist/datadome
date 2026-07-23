@@ -1,0 +1,78 @@
+openapi: 3.1.0
+info:
+  title: DataDome Management Account Endpoints API
+  description: DataDome's management API for configuring account settings, endpoints, custom rules, trusted proxies, verified models, Priority Protect priorities and templates, and Account Protect decision feedback.
+  version: 1.1.0
+servers:
+- url: https://api-management.datadome.co
+  description: DataDome management API base URL
+security:
+- apiKey: []
+tags:
+- name: Endpoints
+paths:
+  /1.0/endpoints:
+    get:
+      tags:
+      - Endpoints
+      summary: List endpoints
+      responses:
+        '200':
+          description: Endpoints
+    post:
+      tags:
+      - Endpoints
+      summary: Create endpoint
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                type:
+                  type: string
+      responses:
+        '201':
+          description: Created
+  /1.0/endpoints/{id}:
+    parameters:
+    - in: path
+      name: id
+      required: true
+      schema:
+        type: string
+    get:
+      tags:
+      - Endpoints
+      summary: Get endpoint
+      responses:
+        '200':
+          description: Endpoint
+    patch:
+      tags:
+      - Endpoints
+      summary: Update endpoint
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Updated
+    delete:
+      tags:
+      - Endpoints
+      summary: Delete endpoint
+      responses:
+        '204':
+          description: Deleted
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: x-api-key
+      description: DataDome management API key issued in the customer dashboard.

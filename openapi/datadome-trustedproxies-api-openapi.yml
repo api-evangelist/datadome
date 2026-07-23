@@ -1,0 +1,71 @@
+openapi: 3.1.0
+info:
+  title: DataDome Management Account TrustedProxies API
+  description: DataDome's management API for configuring account settings, endpoints, custom rules, trusted proxies, verified models, Priority Protect priorities and templates, and Account Protect decision feedback.
+  version: 1.1.0
+servers:
+- url: https://api-management.datadome.co
+  description: DataDome management API base URL
+security:
+- apiKey: []
+tags:
+- name: TrustedProxies
+paths:
+  /1.1/protection/trustedproxies:
+    get:
+      tags:
+      - TrustedProxies
+      summary: List trusted proxies
+      responses:
+        '200':
+          description: Trusted proxies
+    post:
+      tags:
+      - TrustedProxies
+      summary: Add trusted proxy
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                cidr:
+                  type: string
+                description:
+                  type: string
+      responses:
+        '201':
+          description: Created
+  /1.1/protection/trustedproxies/{trustedProxyId}:
+    parameters:
+    - in: path
+      name: trustedProxyId
+      required: true
+      schema:
+        type: string
+    put:
+      tags:
+      - TrustedProxies
+      summary: Update trusted proxy
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Updated
+    delete:
+      tags:
+      - TrustedProxies
+      summary: Remove trusted proxy
+      responses:
+        '204':
+          description: Deleted
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: x-api-key
+      description: DataDome management API key issued in the customer dashboard.

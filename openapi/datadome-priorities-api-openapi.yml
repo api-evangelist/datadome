@@ -1,0 +1,92 @@
+openapi: 3.1.0
+info:
+  title: DataDome Management Account Priorities API
+  description: DataDome's management API for configuring account settings, endpoints, custom rules, trusted proxies, verified models, Priority Protect priorities and templates, and Account Protect decision feedback.
+  version: 1.1.0
+servers:
+- url: https://api-management.datadome.co
+  description: DataDome management API base URL
+security:
+- apiKey: []
+tags:
+- name: Priorities
+paths:
+  /priorities:
+    get:
+      tags:
+      - Priorities
+      summary: List priorities (Priority Protect)
+      responses:
+        '200':
+          description: Priorities
+    post:
+      tags:
+      - Priorities
+      summary: Create priority
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                rank:
+                  type: integer
+      responses:
+        '201':
+          description: Created
+  /priorities/{id}:
+    parameters:
+    - in: path
+      name: id
+      required: true
+      schema:
+        type: string
+    get:
+      tags:
+      - Priorities
+      summary: Retrieve a priority
+      responses:
+        '200':
+          description: Priority
+    patch:
+      tags:
+      - Priorities
+      summary: Update a priority
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Updated
+    delete:
+      tags:
+      - Priorities
+      summary: Delete a priority
+      responses:
+        '204':
+          description: Deleted
+  /priorities/{id}/metrics:
+    get:
+      tags:
+      - Priorities
+      summary: Get priority metrics
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Metrics
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: x-api-key
+      description: DataDome management API key issued in the customer dashboard.

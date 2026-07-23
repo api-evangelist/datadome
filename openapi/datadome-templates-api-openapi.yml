@@ -1,0 +1,78 @@
+openapi: 3.1.0
+info:
+  title: DataDome Management Account Templates API
+  description: DataDome's management API for configuring account settings, endpoints, custom rules, trusted proxies, verified models, Priority Protect priorities and templates, and Account Protect decision feedback.
+  version: 1.1.0
+servers:
+- url: https://api-management.datadome.co
+  description: DataDome management API base URL
+security:
+- apiKey: []
+tags:
+- name: Templates
+paths:
+  /templates:
+    get:
+      tags:
+      - Templates
+      summary: List templates
+      responses:
+        '200':
+          description: Templates
+    post:
+      tags:
+      - Templates
+      summary: Create template
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                body:
+                  type: object
+      responses:
+        '201':
+          description: Created
+  /templates/{id}:
+    parameters:
+    - in: path
+      name: id
+      required: true
+      schema:
+        type: string
+    get:
+      tags:
+      - Templates
+      summary: Retrieve a template
+      responses:
+        '200':
+          description: Template
+    patch:
+      tags:
+      - Templates
+      summary: Update a template
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Updated
+    delete:
+      tags:
+      - Templates
+      summary: Delete a template
+      responses:
+        '204':
+          description: Deleted
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: x-api-key
+      description: DataDome management API key issued in the customer dashboard.

@@ -1,0 +1,75 @@
+openapi: 3.1.0
+info:
+  title: DataDome Management Account CustomRules API
+  description: DataDome's management API for configuring account settings, endpoints, custom rules, trusted proxies, verified models, Priority Protect priorities and templates, and Account Protect decision feedback.
+  version: 1.1.0
+servers:
+- url: https://api-management.datadome.co
+  description: DataDome management API base URL
+security:
+- apiKey: []
+tags:
+- name: CustomRules
+paths:
+  /1.1/protection/custom-rules:
+    get:
+      tags:
+      - CustomRules
+      summary: List custom rules
+      responses:
+        '200':
+          description: Custom rules
+    post:
+      tags:
+      - CustomRules
+      summary: Create custom rule
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                action:
+                  type: string
+                conditions:
+                  type: array
+                  items:
+                    type: object
+      responses:
+        '201':
+          description: Created
+  /1.1/protection/custom-rules/{customRuleId}:
+    parameters:
+    - in: path
+      name: customRuleId
+      required: true
+      schema:
+        type: string
+    put:
+      tags:
+      - CustomRules
+      summary: Update custom rule
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Updated
+    delete:
+      tags:
+      - CustomRules
+      summary: Delete custom rule
+      responses:
+        '204':
+          description: Deleted
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: x-api-key
+      description: DataDome management API key issued in the customer dashboard.

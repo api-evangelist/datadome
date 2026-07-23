@@ -1,0 +1,40 @@
+openapi: 3.1.0
+info:
+  title: DataDome Management Account AccountProtect API
+  description: DataDome's management API for configuring account settings, endpoints, custom rules, trusted proxies, verified models, Priority Protect priorities and templates, and Account Protect decision feedback.
+  version: 1.1.0
+servers:
+- url: https://api-management.datadome.co
+  description: DataDome management API base URL
+security:
+- apiKey: []
+tags:
+- name: AccountProtect
+paths:
+  /account-protect/decision-feedback:
+    post:
+      tags:
+      - AccountProtect
+      summary: Submit feedback on Account Protect decisions
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                requestId:
+                  type: string
+                feedback:
+                  type: string
+                accountId:
+                  type: string
+      responses:
+        '200':
+          description: Recorded
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: x-api-key
+      description: DataDome management API key issued in the customer dashboard.

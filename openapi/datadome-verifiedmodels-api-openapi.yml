@@ -1,0 +1,28 @@
+openapi: 3.1.0
+info:
+  title: DataDome Management Account VerifiedModels API
+  description: DataDome's management API for configuring account settings, endpoints, custom rules, trusted proxies, verified models, Priority Protect priorities and templates, and Account Protect decision feedback.
+  version: 1.1.0
+servers:
+- url: https://api-management.datadome.co
+  description: DataDome management API base URL
+security:
+- apiKey: []
+tags:
+- name: VerifiedModels
+paths:
+  /1.1/protection/verified-models:
+    get:
+      tags:
+      - VerifiedModels
+      summary: List verified models (Agentic Trust)
+      responses:
+        '200':
+          description: Verified models
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: x-api-key
+      description: DataDome management API key issued in the customer dashboard.
