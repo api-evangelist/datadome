@@ -1,0 +1,28 @@
+{
+  "provider": "datadome",
+  "sources": [
+    "datadome-account-api-openapi.yml",
+    "datadome-accountprotect-api-openapi.yml",
+    "datadome-customrules-api-openapi.yml",
+    "datadome-endpoints-api-openapi.yml",
+    "datadome-priorities-api-openapi.yml",
+    "datadome-templates-api-openapi.yml",
+    "datadome-trustedproxies-api-openapi.yml",
+    "datadome-verifiedmodels-api-openapi.yml"
+  ],
+  "outputs": [
+    "datadome-account-api-openapi.yml",
+    "datadome-accountprotect-api-openapi.yml",
+    "datadome-customrules-api-openapi.yml",
+    "datadome-endpoints-api-openapi.yml",
+    "datadome-priorities-api-openapi.yml",
+    "datadome-templates-api-openapi.yml",
+    "datadome-trustedproxies-api-openapi.yml",
+    "datadome-verifiedmodels-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
