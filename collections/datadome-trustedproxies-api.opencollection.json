@@ -1,0 +1,92 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "DataDome Management Account TrustedProxies API",
+    "version": "1.1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "x-api-key",
+      "value": "{{x-api-key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "TrustedProxies",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List trusted proxies",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/1.1/protection/trustedproxies"
+          },
+          "docs": "List trusted proxies"
+        },
+        {
+          "info": {
+            "name": "Add trusted proxy",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api-management.datadome.co/1.1/protection/trustedproxies",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Add trusted proxy"
+        },
+        {
+          "info": {
+            "name": "Update trusted proxy",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api-management.datadome.co/1.1/protection/trustedproxies/:trustedProxyId",
+            "params": [
+              {
+                "name": "trustedProxyId",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update trusted proxy"
+        },
+        {
+          "info": {
+            "name": "Remove trusted proxy",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api-management.datadome.co/1.1/protection/trustedproxies/:trustedProxyId",
+            "params": [
+              {
+                "name": "trustedProxyId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Remove trusted proxy"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

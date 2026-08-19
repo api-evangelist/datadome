@@ -1,0 +1,110 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "DataDome Management Account Endpoints API",
+    "version": "1.1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "x-api-key",
+      "value": "{{x-api-key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Endpoints",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List endpoints",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/1.0/endpoints"
+          },
+          "docs": "List endpoints"
+        },
+        {
+          "info": {
+            "name": "Create endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api-management.datadome.co/1.0/endpoints",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create endpoint"
+        },
+        {
+          "info": {
+            "name": "Get endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/1.0/endpoints/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get endpoint"
+        },
+        {
+          "info": {
+            "name": "Update endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api-management.datadome.co/1.0/endpoints/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update endpoint"
+        },
+        {
+          "info": {
+            "name": "Delete endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api-management.datadome.co/1.0/endpoints/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete endpoint"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

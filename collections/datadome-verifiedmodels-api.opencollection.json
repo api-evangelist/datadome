@@ -1,0 +1,37 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "DataDome Management Account VerifiedModels API",
+    "version": "1.1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "x-api-key",
+      "value": "{{x-api-key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "VerifiedModels",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List verified models (Agentic Trust)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/1.1/protection/verified-models"
+          },
+          "docs": "List verified models (Agentic Trust)"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

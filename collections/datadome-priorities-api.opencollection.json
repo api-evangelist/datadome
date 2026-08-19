@@ -1,0 +1,128 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "DataDome Management Account Priorities API",
+    "version": "1.1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "x-api-key",
+      "value": "{{x-api-key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Priorities",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List priorities (Priority Protect)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/priorities"
+          },
+          "docs": "List priorities (Priority Protect)"
+        },
+        {
+          "info": {
+            "name": "Create priority",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api-management.datadome.co/priorities",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create priority"
+        },
+        {
+          "info": {
+            "name": "Retrieve a priority",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/priorities/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a priority"
+        },
+        {
+          "info": {
+            "name": "Update a priority",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api-management.datadome.co/priorities/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update a priority"
+        },
+        {
+          "info": {
+            "name": "Delete a priority",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api-management.datadome.co/priorities/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a priority"
+        },
+        {
+          "info": {
+            "name": "Get priority metrics",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/priorities/:id/metrics",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get priority metrics"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

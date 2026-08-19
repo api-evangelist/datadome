@@ -1,0 +1,118 @@
+{
+  "item": [
+    {
+      "id": "a73912ea-5b76-4f37-a5cc-df1e2f99db2d",
+      "name": "VerifiedModels",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "fc0502fa-8f38-4b00-8243-13397e346842",
+          "name": "List verified models (Agentic Trust)",
+          "request": {
+            "name": "List verified models (Agentic Trust)",
+            "description": {},
+            "url": {
+              "path": [
+                "1.1",
+                "protection",
+                "verified-models"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "23c3fa2d-efc0-48ef-b15b-3dce96f7fc95",
+              "name": "Verified models",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "1.1",
+                    "protection",
+                    "verified-models"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api-management.datadome.co",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "x-api-key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "fc550a11-e368-443c-866e-fdc0c129b523",
+    "name": "DataDome Management Account VerifiedModels API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "DataDome's management API for configuring account settings, endpoints, custom rules, trusted proxies, verified models, Priority Protect priorities and templates, and Account Protect decision feedback.",
+      "type": "text/plain"
+    }
+  }
+}

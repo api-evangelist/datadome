@@ -1,0 +1,85 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "DataDome Management Account API",
+    "version": "1.1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "x-api-key",
+      "value": "{{x-api-key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Account",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve account parameters",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/1.0/account-settings"
+          },
+          "docs": "Retrieve account parameters"
+        },
+        {
+          "info": {
+            "name": "Update account parameters",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api-management.datadome.co/1.0/account-settings",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update account parameters"
+        },
+        {
+          "info": {
+            "name": "List account endpoints",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/1.0/account-endpoints"
+          },
+          "docs": "List account endpoints"
+        },
+        {
+          "info": {
+            "name": "Get account usage metrics",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/1.0/account-usage"
+          },
+          "docs": "Get account usage metrics"
+        },
+        {
+          "info": {
+            "name": "Get account usage by endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api-management.datadome.co/1.0/account-usage-by-endpoint"
+          },
+          "docs": "Get account usage by endpoint"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

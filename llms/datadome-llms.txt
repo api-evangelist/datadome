@@ -1,0 +1,260 @@
+# DataDome Documentation
+
+> DataDome gives users access to dashboards to follow up on traffic quality and understand bot activity on their websites.
+
+## Guides
+- [Welcome to DataDome](https://docs.datadome.co/docs/welcome-to-datadome-platform.md)
+- [Getting Started with DataDome Platform](https://docs.datadome.co/docs/getting-started.md): This page will help you get started with DataDome. Follow these four steps to secure your application with DataDome in minutes.
+- [Support](https://docs.datadome.co/docs/support.md)
+- [Regional Endpoints](https://docs.datadome.co/docs/api-server.md)
+- [Static IP endpoints](https://docs.datadome.co/docs/static-ip-endpoints.md)
+- [Akamai EdgeWorkers](https://docs.datadome.co/docs/akamai-edge-worker.md): Akamai integration for Bot Protection
+- [Akamai EdgeWorker Changelog](https://docs.datadome.co/docs/akamai-changelog.md)
+- [Apache](https://docs.datadome.co/docs/apache.md): DataDome Apache integration detects and protects against bot activity.
+- [Apache Changelog](https://docs.datadome.co/docs/changelog-apache.md)
+- [Apigee](https://docs.datadome.co/docs/apigee.md)
+- [Apigee Changelog](https://docs.datadome.co/docs/apigee-changelog.md)
+- [Arc XP](https://docs.datadome.co/docs/arcxp.md)
+- [Arc XP Changelog](https://docs.datadome.co/docs/arc-xp-changelog.md)
+- [Auth0](https://docs.datadome.co/docs/auth0.md)
+- [AWS CloudFront](https://docs.datadome.co/docs/cloudfront-integration-setup.md)
+- [CloudFront Node.js Changelog](https://docs.datadome.co/docs/cloudfront-integration-changelog.md)
+- [CloudFront Python Changelog](https://docs.datadome.co/docs/cloudfront-python-changelog.md)
+- [CloudFormation Template](https://docs.datadome.co/docs/cloudformation-template.md)
+- [How to upgrade CloudFront Node.js from v1 to v2](https://docs.datadome.co/docs/how-to-upgrade-cloudfront-nodejs-from-v1-to-v2.md)
+- [Bunny](https://docs.datadome.co/docs/bunny.md)
+- [Bunny CDN Changelog](https://docs.datadome.co/docs/bunny-changelog.md)
+- [Clerk](https://docs.datadome.co/docs/clerk.md): This page describes how to protect Clerk Frontend API using Cloudflare worker
+- [Cloudflare Worker](https://docs.datadome.co/docs/cloudflare-worker.md)
+- [Cloudflare Worker Changelog](https://docs.datadome.co/docs/cloudflare-changelog.md)
+- [Integrate via Cloudflare Dashboard](https://docs.datadome.co/docs/cloudflare-worker-dashboard.md)
+- [Integrate via Wrangler](https://docs.datadome.co/docs/cloudflare-worker-wrangler.md)
+- [Integrate via npm](https://docs.datadome.co/docs/cloudflare-worker-npm.md)
+- [Integrate via Terraform](https://docs.datadome.co/docs/cloudflare-worker-terraform.md)
+- [Cloudflare Worker v1 [Deprecated]](https://docs.datadome.co/docs/cloudflare-worker-v1.md): DataDome Cloudflare integration detects and protects against bot activity.
+- [How to upgrade from v1 to v2](https://docs.datadome.co/docs/cloudflare-workers-v2-migration-guide.md)
+- [Migrate via Cloudflare Dashboard](https://docs.datadome.co/docs/how-to-upgrade-from-v1-to-v2-dashboard.md)
+- [Migrate via Wrangler](https://docs.datadome.co/docs/how-to-upgrade-from-v1-to-v2-wrangler.md)
+- [Migrate via npm](https://docs.datadome.co/docs/how-to-upgrade-from-v1-to-v2-npm.md)
+- [Migrate via Terraform](https://docs.datadome.co/docs/how-to-upgrade-from-v1-to-v2-terraform.md)
+- [Envoy](https://docs.datadome.co/docs/module-envoy.md): DataDome Envoy module detects and protects against bot activity.
+- [Envoy Changelog](https://docs.datadome.co/docs/envoy-changelog.md)
+- [Envoy Gateway](https://docs.datadome.co/docs/envoy-gateway.md)
+- [F5 iRules](https://docs.datadome.co/docs/module-f5-irules.md): DataDome F5 iRules integration detects and protects against bot activity.
+- [F5 iRules Changelog](https://docs.datadome.co/docs/irule-changelog.md)
+- [FastMCP (Python)](https://docs.datadome.co/docs/fastmcp.md)
+- [Fasterize](https://docs.datadome.co/docs/fasterize.md): DataDome Fasterize integration detects and protects against bot activity.
+- [Fastly CDN (VCL)](https://docs.datadome.co/docs/module-fastly.md): DataDome Fastly module detects and protects against bot activity.
+- [Fastly Changelog](https://docs.datadome.co/docs/fastly-changelog.md)
+- [Fastly Compute](https://docs.datadome.co/docs/fastly-compute.md)
+- [Fastly Compute Changelog](https://docs.datadome.co/docs/fastly-compute-changelog.md)
+- [Go](https://docs.datadome.co/docs/go.md): DataDome Go Integration build detects and protects against bot activity
+- [Go Changelog](https://docs.datadome.co/docs/go-changelog.md)
+- [How to upgrade from v1 to v2](https://docs.datadome.co/docs/go-migration-guide-from-v1-to-v2.md)
+- [Google Cloud Load Balancer](https://docs.datadome.co/docs/google-cloud-load-balancer.md)
+- [Google Cloud Load Balancer Changelog](https://docs.datadome.co/docs/google-cloud-load-balancer-changelog.md)
+- [HAProxy](https://docs.datadome.co/docs/haproxy.md)
+- [HAProxy (SPOE) [Deprecated]](https://docs.datadome.co/docs/haproxy-setup-spoe.md): DataDome HAProxy module detects and protects against bot activity.
+- [HAProxy Changelog](https://docs.datadome.co/docs/haproxy-changelog.md)
+- [Migrate from 1.X to 2.X](https://docs.datadome.co/docs/migrate-from-1x-to-2x.md)
+- [IIS](https://docs.datadome.co/docs/iis-aspnet.md)
+- [System.Web](https://docs.datadome.co/docs/module-systemweb.md)
+- [IIS Changelog](https://docs.datadome.co/docs/iis-changelog.md)
+- [ASP.NET Core](https://docs.datadome.co/docs/aspnet-core.md): DataDome .NET Core module detects and protects against bot activity.
+- [ASP.Net Core Changelog](https://docs.datadome.co/docs/aspnet-core-changelog.md)
+- [Java](https://docs.datadome.co/docs/module-java.md): Java Module integration detects and protects against bot activity.
+- [Java/Spring Boot - JHipster](https://docs.datadome.co/docs/module-javaspring-boot-jhipster.md)
+- [Java/Tomcat-Jetty](https://docs.datadome.co/docs/module-java-tomcat-jetty.md)
+- [Java/Vert.x-Web](https://docs.datadome.co/docs/module-javavertx-web.md)
+- [Java Changelog](https://docs.datadome.co/docs/java-module-changelog-1.md)
+- [Keycloak](https://docs.datadome.co/docs/keycloak.md): Keycloak integration for Bot Protection
+- [Kong](https://docs.datadome.co/docs/kong.md)
+- [Magento](https://docs.datadome.co/docs/magento-with-fastly-cdn.md): DataDome Magento with Fastly CDN integration detects and protects against bot activity.
+- [Magento Changelog](https://docs.datadome.co/docs/magento-changelog.md)
+- [MuleSoft](https://docs.datadome.co/docs/mulesoft.md): MuleSoft Integration for Bot Protection
+- [Mulesoft Changelog](https://docs.datadome.co/docs/mulesoft-changelog.md)
+- [Next.js by Vercel](https://docs.datadome.co/docs/nextjs.md)
+- [Next.js Changelog](https://docs.datadome.co/docs/nextjs-changelog.md)
+- [Nginx](https://docs.datadome.co/docs/nginx.md)
+- [Nginx Changelog](https://docs.datadome.co/docs/changelog-nginx.md)
+- [Ingress Nginx Controller [Deprecated]](https://docs.datadome.co/docs/ingress-nginx-controller.md): DataDome Ingress Nginx detects and protects against bot activity
+- [F5 NGINX Ingress Controller](https://docs.datadome.co/docs/f5-nginx-ingress.md)
+- [Node.js](https://docs.datadome.co/docs/nodejs.md)
+- [Node.js Changelog](https://docs.datadome.co/docs/nodejs-changelog.md)
+- [How to upgrade from v1 to v2](https://docs.datadome.co/docs/migration-guide-from-v1-to-v2.md)
+- [OpenResty](https://docs.datadome.co/docs/openresty.md): DataDome OpenResty module detects and protects against bot activity.
+- [OpenResty Changelog](https://docs.datadome.co/docs/openresty-changelog.md)
+- [POQ Commerce](https://docs.datadome.co/docs/poq-commerce.md)
+- [Python ASGI](https://docs.datadome.co/docs/python-asgi.md)
+- [Python ASGI Changelog](https://docs.datadome.co/docs/python-asgi-changelog.md)
+- [Ruby](https://docs.datadome.co/docs/ruby.md): DataDome Ruby module detects and protects against bot activity.
+- [Ruby Changelog](https://docs.datadome.co/docs/ruby-changelog.md)
+- [Salesforce Commerce Cloud](https://docs.datadome.co/docs/salesforcecommercecloud.md)
+- [Salesforce Commerce Cloud Changelog](https://docs.datadome.co/docs/salesforcecommercecloud-changelog.md)
+- [Migration guide](https://docs.datadome.co/docs/salesforcecommercecloud-migration-guide.md)
+- [Salesforce (SFCC) (Deprecated)](https://docs.datadome.co/docs/module-salesforce.md): DataDome Salesforce Cartridge detects and protects against bot activity on Salesforce Commerce Cloud.
+- [SFCC module Changelog](https://docs.datadome.co/docs/salesforce-module-changelog.md)
+- [Traefik](https://docs.datadome.co/docs/traefik.md)
+- [Traefik Changelog](https://docs.datadome.co/docs/traefik-changelog.md)
+- [Tyk](https://docs.datadome.co/docs/tyk.md): DataDome Tyk integration detects and protects against bot activity.
+- [Tyk Changelog](https://docs.datadome.co/docs/tyk-changelog.md)
+- [Varnish](https://docs.datadome.co/docs/varnish.md): DataDome Varnish module detects and protects against bot activity.
+- [Varnish Changelog](https://docs.datadome.co/docs/varnish-changelog.md)
+- [Using DataDome behind a CDN](https://docs.datadome.co/docs/cdn-integration.md)
+- [JavaScript Tag](https://docs.datadome.co/docs/javascript-tag.md)
+- [How to configure the JavaScript Tag](https://docs.datadome.co/docs/how-to-configure-the-javascript-tag.md)
+- [Android SDK](https://docs.datadome.co/docs/sdk-android.md): This guide describes how to integrate the DataDome SDK in your Android application.
+- [Android SDK Changelog](https://docs.datadome.co/docs/android-sdk-changelog.md)
+- [OkHttp Integration](https://docs.datadome.co/docs/okhttp-integration.md): This guide describes how to integrate the DataDome SDK in your Android application.
+- [Manual Integration](https://docs.datadome.co/docs/manual-integration-1.md): This guide describes how to integrate the DataDome SDK in your Android application.
+- [Integration within SFCC](https://docs.datadome.co/docs/integration-for-sfcc.md): This guide describes how to integrate DataDome SDK in your Android application within Salesforce Commerce Cloud (SFCC) environment.
+- [Google Play data security](https://docs.datadome.co/docs/sdk-android-data-safety.md): This page helps to fill Google Play data security form
+- [iOS SDKs](https://docs.datadome.co/docs/sdk-ios.md): This guide describes how to integrate the DataDome SDK in your iOS application.
+- [Changelog](https://docs.datadome.co/docs/sdk-ios-changelog.md)
+- [iOS + URLSession](https://docs.datadome.co/docs/sdk-ios-urlsession.md): How to use the DataDome SDK with URLSession
+- [iOS + Alamofire / Moya](https://docs.datadome.co/docs/sdk-ios-alamofire.md): How to integrate the DataDome SDK with Alamofire or Moya
+- [Changelog](https://docs.datadome.co/docs/sdk-ios-alamofire-changelog.md)
+- [Migrating from v3](https://docs.datadome.co/docs/sdk-ios-alamofire-v4-migration.md)
+- [v3](https://docs.datadome.co/docs/sdk-ios-alamofire-v3.md)
+- [iOS + Apollo](https://docs.datadome.co/docs/sdk-ios-apollo.md): How to use the DataDome SDK with the Apollo Client for GraphQL
+- [Changelog](https://docs.datadome.co/docs/sdk-ios-apollo-changelog.md)
+- [v3](https://docs.datadome.co/docs/sdk-ios-apollo-v3.md)
+- [iOS + AFNetworking](https://docs.datadome.co/docs/sdk-ios-afnetworking.md): How to use the DataDome SDK with AFNetworking
+- [Answering The AppStore Connect Privacy Questions](https://docs.datadome.co/docs/sdk-ios-appstore-connect-privacy-questions.md): A guide to help you fill out Apple’s Privacy Practices Questionnaire.
+- [Logs of the iOS SDKs](https://docs.datadome.co/docs/sdk-ios-logs.md): How to read them and how to share them with us.
+- [DataDome cookie: Best practices on iOS](https://docs.datadome.co/docs/sdk-ios-cookies.md): Do's and don'ts
+- [React Native SDKs](https://docs.datadome.co/docs/sdk-react-native.md)
+- [Support Policy](https://docs.datadome.co/docs/sdk-react_native-support_policy.md)
+- [React Native + Axios](https://docs.datadome.co/docs/sdk-react-native-axios.md)
+- [Changelog](https://docs.datadome.co/docs/react-native-axios-changelog.md)
+- [v2](https://docs.datadome.co/docs/sdk-react_native-axios-v_02.md)
+- [v1](https://docs.datadome.co/docs/sdk-react_native-axios-v_01.md)
+- [React Native + Fetch](https://docs.datadome.co/docs/sdk-react-native-fetch.md)
+- [Changelog](https://docs.datadome.co/docs/sdk-react_native-fetch-changelog.md)
+- [v1](https://docs.datadome.co/docs/sdk-react_native-fetch-v_01.md)
+- [React Native + Navigation](https://docs.datadome.co/docs/sdk-react-native-navigation.md)
+- [Changelog](https://docs.datadome.co/docs/react-native-navigation-sdk-changelog.md)
+- [React Native + React Navigation + URQL](https://docs.datadome.co/docs/sdk-react-native-urql.md)
+- [React Native + Superagent](https://docs.datadome.co/docs/sdk-react-native-superagent.md)
+- [Changelog](https://docs.datadome.co/docs/react-native-superagent-changelog.md)
+- [Flutter SDKs](https://docs.datadome.co/docs/flutter-plugin.md): This guide describes how to integrate the DataDome Plugin for Flutter.
+- [Flutter + HTTP](https://docs.datadome.co/docs/flutter-sdk-http.md): This guide describes how to integrate the DataDome Plugin for Flutter.
+- [Changelog](https://docs.datadome.co/docs/flutter-plugin-changelog.md)
+- [Flutter + Dio](https://docs.datadome.co/docs/flutter-plugin-dio-integration.md): This guide describes how to integrate the DataDome Plugin for Flutter using the Dio client.
+- [Changelog](https://docs.datadome.co/docs/dio-flutter-plugin-changelog-1.md)
+- [Checklist: steps needed before activating protection](https://docs.datadome.co/docs/checklist-before-activating-protection.md)
+- [Manage DataDome Protection](https://docs.datadome.co/docs/manage-bots.md)
+- [Threats Detection](https://docs.datadome.co/docs/threat-detection.md): Review and manage the detection models DataDome uses to protect your applications from malicious traffic.
+- [Custom Rules](https://docs.datadome.co/docs/configure-custom-rules.md)
+- [Responses](https://docs.datadome.co/docs/rule-responses.md)
+- [Explore your data](https://docs.datadome.co/docs/how-to-explore-your-data.md)
+- [Analyze responses](https://docs.datadome.co/docs/analyze-responses.md)
+- [Long term trends](https://docs.datadome.co/docs/long-term-trends.md)
+- [Data export](https://docs.datadome.co/docs/export-a-report.md)
+- [Manage account](https://docs.datadome.co/docs/manage-account.md)
+- [Profile settings](https://docs.datadome.co/docs/account-settings.md)
+- [Manage users](https://docs.datadome.co/docs/manage-users.md)
+- [Protection & Endpoints](https://docs.datadome.co/docs/endpoints.md): Learn how to manage endpoints.
+- [Trusted proxies](https://docs.datadome.co/docs/trusted-proxies-1.md): Learn how to manage trusted proxies.
+- [Response pages](https://docs.datadome.co/docs/response-pages.md): Learn how to customize response pages.
+- [Account security](https://docs.datadome.co/docs/account-security.md): Learn how to enforce Dashboard & API security access.
+- [Integrations](https://docs.datadome.co/docs/integrations.md): Learn how to set up DataDome and integrate it with other services.
+- [Audit Trail](https://docs.datadome.co/docs/audit-trail.md): Learn how the Audit Trail feature works
+- [Data & Privacy](https://docs.datadome.co/docs/data-privacy.md)
+- [Workspace](https://docs.datadome.co/docs/workspace.md): DataDome Workspaces deliver enterprise-grade, modular, scalable bot protection by isolating detection, configuration, data, and user access for each business unit, application, or brand. This setup enhances precision, enforces security best practices, and supports centralized control with local autonomy.
+- [ROI Dashboard](https://docs.datadome.co/docs/roi-dashboard.md)
+- [Traffic Queries Syntax](https://docs.datadome.co/docs/syntax-guidelines.md)
+- [Cookies and stored data](https://docs.datadome.co/docs/cookie-session-storage.md)
+- [DataDome Slider](https://docs.datadome.co/docs/datadome-captcha.md)
+- [Device Check](https://docs.datadome.co/docs/device-check.md)
+- [Key rotation](https://docs.datadome.co/docs/key-rotation.md)
+- [Custom Data Enrichment](https://docs.datadome.co/docs/custom-data-enrichment.md): The Custom Data Enrichment feature allows you to inject specific, real-time business data from your integration into the DataDome detection engine. By appending custom signals to the standard DataDome payload, you can enhance detection accuracy based on your application's internal logic.
+- [Advanced Response Page Customization](https://docs.datadome.co/docs/advanced-response-page-customization.md)
+- [Getting started](https://docs.datadome.co/docs/account-protect.md)
+- [Server-side integration](https://docs.datadome.co/docs/account-protect-server-side-integration.md)
+- [SDK integration for login](https://docs.datadome.co/docs/account-protect-login.md): DataDome Account Protect detects account takeover threats and protects you against them
+- [SDK integration for registration](https://docs.datadome.co/docs/account-protect-registration.md): DataDome Account Protect detects account takeover threats and protects you against them
+- [SDK integration for account update](https://docs.datadome.co/docs/account-protect-account-update.md): DataDome Account Protect detects account takeover threats and protects you against them
+- [SDK integration for password update](https://docs.datadome.co/docs/account-protect-password-update.md): DataDome Account Protect detects account takeover threats and protects you against them
+- [SDK integration for custom events](https://docs.datadome.co/docs/account-protect-custom-events.md)
+- [Dashboard](https://docs.datadome.co/docs/account-protect-dashboard.md)
+- [Explore your Account data](https://docs.datadome.co/docs/explore-your-fraud-data.md)
+- [Login overview](https://docs.datadome.co/docs/login-overview.md)
+- [Registration overview](https://docs.datadome.co/docs/registration-overview.md)
+- [Getting Started](https://docs.datadome.co/docs/getting-started-1.md)
+- [Ad Networks integrations](https://docs.datadome.co/docs/ad-networks-integrations.md)
+- [Google Ads integration](https://docs.datadome.co/docs/google-ads-integration.md)
+- [Meta Ads integration](https://docs.datadome.co/docs/meta-ads-integration.md)
+- [Microsoft Ads integration](https://docs.datadome.co/docs/microsoft-ads-integration.md)
+- [Responsibility Matrix](https://docs.datadome.co/docs/responsibility-matrix.md)
+- [AI script explanation](https://docs.datadome.co/docs/ai-script-explanation.md)
+- [Getting started](https://docs.datadome.co/docs/priority-protect-getting-started.md)
+- [Waiting room](https://docs.datadome.co/docs/priority-protect-configuration.md)
+- [Metrics](https://docs.datadome.co/docs/metrics.md)
+- [Custom templates](https://docs.datadome.co/docs/priority-protect-custom-templates.md)
+- [Best Practices](https://docs.datadome.co/docs/priority-protect-best-practices.md)
+- [Logs Enrichment Integration](https://docs.datadome.co/docs/logs-integration.md)
+- [Terraform provider](https://docs.datadome.co/docs/terraform-provider.md)
+- [Terraform Provider Changelog](https://docs.datadome.co/docs/terraform-provider-changelog.md)
+- [Webhook/Notification Integration](https://docs.datadome.co/docs/webhooknotification-integration.md)
+- [Getting Started](https://docs.datadome.co/docs/agentic-trust-getting-started.md)
+- [AI Agent Identification](https://docs.datadome.co/docs/ai-agent-identification.md)
+- [Intent-based Protection](https://docs.datadome.co/docs/intent-based-protection.md)
+- [Agent Trust Score](https://docs.datadome.co/docs/agent-trust-score.md)
+- [MCP Servers Protection](https://docs.datadome.co/docs/mcp-servers-protection.md)
+- [Error: Agent Blocked](https://docs.datadome.co/docs/error-agent-blocked.md): Errors returned by DataDome when blocking AI Agents on MCP endpoints
+- [Dashboard](https://docs.datadome.co/docs/agentic-trust-dashboard.md)
+- [Access Control](https://docs.datadome.co/docs/agentic-trust-dashboard-access-control.md)
+- [Explore](https://docs.datadome.co/docs/agentic-trust-dashboard-explore.md)
+- [Monetize](https://docs.datadome.co/docs/agentic-trust-dashboard-monetize.md)
+- [Traffic Monetization](https://docs.datadome.co/docs/traffic-monetization.md)
+- [Traffic Monetization with Tollbit](https://docs.datadome.co/docs/traffic-monetization-with-tollbit-1.md)
+
+## API Reference
+- [Protection API](https://docs.datadome.co/reference/validate-request.md)
+- [Gets custom rules](https://docs.datadome.co/reference/getcustomrules.md)
+- [Add a new custom rule](https://docs.datadome.co/reference/createcustomrule.md)
+- [Update an existing custom rule](https://docs.datadome.co/reference/updatecustomrule.md)
+- [Deletes a custom rule](https://docs.datadome.co/reference/deletecustomrule.md)
+- [Gets verified models](https://docs.datadome.co/reference/getverifiedmodels.md)
+- [Gets the defined trusted proxies.](https://docs.datadome.co/reference/gettrustedproxies.md)
+- [Adds a new trusted proxy.](https://docs.datadome.co/reference/createtrustedproxy.md)
+- [Updates a trusted proxy.](https://docs.datadome.co/reference/updatetrustedproxy.md)
+- [Deletes a trusted proxy.](https://docs.datadome.co/reference/deletetrustedproxy.md)
+- [Gets account usage](https://docs.datadome.co/reference/getaccountusage.md)
+- [Gets account usage by endpoint](https://docs.datadome.co/reference/getaccountusagebyendpoint.md)
+- [Gets account endpoints](https://docs.datadome.co/reference/getaccountendpoints.md)
+- [Return the parameters for all endpoint(s).](https://docs.datadome.co/reference/getendpoints.md): Collection of endpoints details.
+- [Create a new endpoint.](https://docs.datadome.co/reference/createendpoint.md)
+- [Return the parameters for the specified endpoint.](https://docs.datadome.co/reference/getendpoint.md): Endpoint detail
+- [Delete the endpoint specified by the id.](https://docs.datadome.co/reference/deleteendpoint.md)
+- [Edit the endpoint specified by the id.](https://docs.datadome.co/reference/updateendpoint.md)
+- [Return the Bot Protect parameters for the account](https://docs.datadome.co/reference/getaccountsettings.md)
+- [Updates the Bot Protect parameters for the account](https://docs.datadome.co/reference/updateaccountsettings.md)
+- [Return the Account Protect settings for the account](https://docs.datadome.co/reference/getaccountprotectsettings.md)
+- [Update the Account Protect settings for the account](https://docs.datadome.co/reference/updateaccountprotectsettings.md)
+- [Gets AI agents](https://docs.datadome.co/reference/getaiagents.md)
+- [Provide feedback about Account Protect recommendations for a specific event, account, or user.](https://docs.datadome.co/reference/account-protect-decision-feedback.md): Account Protect accepts feedbacks about its recommendations for a specific event, account, or user. All submitted feedbacks contribute to refining and improving the detection algorithms for enhanced security performance.  Feedback submission is recommended when: * You take the decision to block a user on your side * You take the decision to allow a user on your side after Account Protect recommended to deny it  These decisions can originate from various sources, from a manual decision done by an analyst to an automated system (rule engine, report from other users, rate limit...).
+- [List all priorities](https://docs.datadome.co/reference/listpriorities.md): Returns a list of all priorities associated with your account. Includes both active and completed entries.
+- [Create a new priority](https://docs.datadome.co/reference/createpriority.md): Creates a new priority with the provided configuration.
+- [Retrieve a priority by ID](https://docs.datadome.co/reference/getpriority.md): Returns a single priority by its unique identifier.
+- [Update an existing priority](https://docs.datadome.co/reference/updatepriority.md): Performs a **partial update** on the specified priority using **JSON Merge Patch** semantics (RFC 7396). Only fields provided in the payload are modified; omitted fields remain unchanged.  Immutable fields like `id`, `testingToken`, `createdAt`, and `updatedAt` are ignored if included. `startAt` and `endAt` can be updated independently. For nested objects like `preAdmission`, the entire object is replaced, not merged.
+- [Delete a priority](https://docs.datadome.co/reference/deletepriority.md): Permanently deletes the specified priority.
+- [Get metrics for a specific priority](https://docs.datadome.co/reference/getprioritymetrics.md): Retrieves aggregated time-series metrics (visitors, queue size, status) for a specific priority over a given time range.
+- [List all templates](https://docs.datadome.co/reference/listtemplates.md): Returns a list of all templates ordered by name, with usage count.
+- [Create a template](https://docs.datadome.co/reference/createtemplate.md): Creates a new HTML template for waiting room pages. Must be a complete HTML5 document (`<!DOCTYPE html>`, closing `</body></html>`). Limited to 50 KB.
+- [Retrieve a template by ID](https://docs.datadome.co/reference/gettemplate.md): Returns a single template by its unique identifier.
+- [Update a template](https://docs.datadome.co/reference/updatetemplate.md): Partial update. Only provided fields are updated.
+- [Delete a template](https://docs.datadome.co/reference/deletetemplate.md): Permanently deletes the specified template.
+
+## Changelog
+- [Node.js module 2.6.0](https://docs.datadome.co/changelog/nodejs-module-260.md)
+- [JavaScript Tag 5.9.2](https://docs.datadome.co/changelog/javascript-tag-592.md)
+- [Cloudflare Worker module 2.7.0](https://docs.datadome.co/changelog/cloudflare-worker-module-270.md)
+- [Android SDK 3.0.14](https://docs.datadome.co/changelog/android-sdk-3014.md)
+- [Fastly module 2.31.1](https://docs.datadome.co/changelog/fastly-module-2311.md)
+- [React Native SDK for Fetch 2.0.8](https://docs.datadome.co/changelog/react-native-sdk-for-fetch-208.md)
+- [Go module v2.5.0](https://docs.datadome.co/changelog/go-module-v250.md)
+- [Google Cloud Load Balancer module 1.7.0](https://docs.datadome.co/changelog/google-cloud-load-balancer-module-170.md)
+- [Python ASGI module 1.2.0](https://docs.datadome.co/changelog/python-asgi-module-120.md)
+- [React Native SDK for Fetch 2.0.7](https://docs.datadome.co/changelog/react-native-sdk-for-fetch-207.md)
