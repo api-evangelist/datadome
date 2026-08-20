@@ -165,6 +165,10 @@ apis:
   baseURL: https://datadome.co
   tags:
   - DDoS
+  - Layer-7
+  - Availability
+  tags_raw:
+  - DDoS
   - Layer 7
   - Availability
   properties:
@@ -275,7 +279,8 @@ apis:
   description: The Endpoints API from DataDome — 2 operation(s) for endpoints.
   humanURL: https://datadome.co/products/bot-protect/
   baseURL: https://datadome.co
-  tags:
+  tags: []
+  tags_raw:
   - Endpoints
   properties:
   - type: OpenAPI
