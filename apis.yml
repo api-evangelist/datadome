@@ -176,7 +176,7 @@ apis:
   baseURL: https://datadome.co
   tags:
   - DDoS
-  - Layer 7
+  - Layer-7
   - Availability
   tags_raw:
   - DDoS
