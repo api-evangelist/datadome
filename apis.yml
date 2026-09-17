@@ -276,16 +276,6 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/datadome-accountprotect-api-openapi.yml
-- aid: datadome:datadome-customrules-api
-  name: DataDome CustomRules API
-  description: The CustomRules API from DataDome — 2 operation(s) for customrules.
-  humanURL: https://datadome.co/products/bot-protect/
-  baseURL: https://datadome.co
-  tags:
-  - CustomRules
-  properties:
-  - type: OpenAPI
-    url: openapi/datadome-customrules-api-openapi.yml
 - aid: datadome:datadome-endpoints-api
   name: DataDome Endpoints API
   description: The Endpoints API from DataDome — 2 operation(s) for endpoints.
@@ -337,6 +327,16 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/datadome-verifiedmodels-api-openapi.yml
+- aid: datadome:datadome-custom-rules-api
+  name: DataDome Custom Rules API
+  description: The Custom Rules API from DataDome — 2 operation(s) for custom rules.
+  humanURL: https://datadome.co/products/bot-protect/
+  baseURL: https://datadome.co
+  tags:
+  - Custom Rules
+  properties:
+  - type: OpenAPI
+    url: openapi/datadome-custom-rules-api-openapi.yml
 features:
   - name: Real-Time Decisioning
     description: Per-request verdicts returned in sub-millisecond windows at the edge.
