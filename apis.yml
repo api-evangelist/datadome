@@ -75,6 +75,11 @@ apis:
   - Bot Management
   - Scraping
   - Credential Stuffing
+  - Machine-Learning
+  tags_raw:
+  - Bot Management
+  - Scraping
+  - Credential Stuffing
   - ML
   properties:
   - type: ProductPage
@@ -333,6 +338,8 @@ apis:
   humanURL: https://datadome.co/products/bot-protect/
   baseURL: https://datadome.co
   tags:
+  - CustomRules
+  tags_raw:
   - Custom Rules
   properties:
   - type: OpenAPI
