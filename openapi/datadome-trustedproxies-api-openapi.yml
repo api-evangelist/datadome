@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: DataDome Management Account TrustedProxies API
+  title: DataDome Management Trusted Proxies API
   description: DataDome's management API for configuring account settings, endpoints, custom rules, trusted proxies, verified models, Priority Protect priorities and templates, and Account Protect decision feedback.
   version: 1.1.0
 servers:
@@ -19,6 +19,8 @@ paths:
       responses:
         '200':
           description: Trusted proxies
+      operationId: get11ProtectionTrustedproxies
+      x-operation-id-source: derived
     post:
       tags:
       - TrustedProxies
@@ -36,6 +38,8 @@ paths:
       responses:
         '201':
           description: Created
+      operationId: post11ProtectionTrustedproxies
+      x-operation-id-source: derived
   /1.1/protection/trustedproxies/{trustedProxyId}:
     parameters:
     - in: path
@@ -55,6 +59,8 @@ paths:
       responses:
         '200':
           description: Updated
+      operationId: put11ProtectionTrustedproxiesByTrustedProxyId
+      x-operation-id-source: derived
     delete:
       tags:
       - TrustedProxies
@@ -62,6 +68,8 @@ paths:
       responses:
         '204':
           description: Deleted
+      operationId: delete11ProtectionTrustedproxiesByTrustedProxyId
+      x-operation-id-source: derived
 components:
   securitySchemes:
     apiKey:

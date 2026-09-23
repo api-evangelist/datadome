@@ -1,14 +1,7 @@
 {
   "provider": "datadome",
   "sources": [
-    "datadome-account-api-openapi.yml",
-    "datadome-accountprotect-api-openapi.yml",
-    "datadome-customrules-api-openapi.yml",
-    "datadome-endpoints-api-openapi.yml",
-    "datadome-priorities-api-openapi.yml",
-    "datadome-templates-api-openapi.yml",
-    "datadome-trustedproxies-api-openapi.yml",
-    "datadome-verifiedmodels-api-openapi.yml"
+    "_original/datadome-openapi.yml"
   ],
   "outputs": [
     "datadome-account-api-openapi.yml",
@@ -20,9 +13,25 @@
     "datadome-trustedproxies-api-openapi.yml",
     "datadome-verifiedmodels-api-openapi.yml"
   ],
-  "archived": [],
+  "archived": [
+    "deleted 1 superseded output(s) from the previous generation"
+  ],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "datadome-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "superseded outputs removed: datadome-custom-rules-api-openapi.yml",
+    "apis.yml register: written (+1 apis, 17 total)"
+  ],
+  "skipped": [
+    "datadome-account-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "datadome-accountprotect-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "datadome-custom-rules-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "datadome-endpoints-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "datadome-priorities-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "datadome-templates-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "datadome-trustedproxies-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "datadome-verifiedmodels-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
