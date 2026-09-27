@@ -42,7 +42,20 @@ accessModel:
 position: Producing
 access: Commercial
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/datadome.png
+x-docs-platform: readme
+x-docs-platform-confidence: high
+x-docs-platform-checked: 2026-09-25
 tags:
+  - Bot Mitigation
+  - Fraud Prevention
+  - Account Protection
+  - Ad Fraud
+  - DDoS
+  - Real-Time
+  - Edge Security
+  - Application Security
+  - Agentic Trust
+tags_raw:
   - Bot Mitigation
   - Fraud Protection
   - Account Protection
@@ -70,17 +83,17 @@ apis:
 
     creation, content theft) without adding latency to good traffic.
   humanURL: https://datadome.co/products/bot-protect/
-  baseURL: https://datadome.co
   tags:
   - Bot Management
   - Scraping
   - Credential Stuffing
-  - Machine-Learning
+  - Machine Learning
   tags_raw:
   - Bot Management
   - Scraping
   - Credential Stuffing
   - ML
+  - Machine-Learning
   properties:
   - type: ProductPage
     url: https://datadome.co/products/bot-protect/
@@ -95,8 +108,11 @@ apis:
 
     signals layered on top of the Bot Protect decisioning core.
   humanURL: https://datadome.co/products/account-protect/
-  baseURL: https://datadome.co
   tags:
+  - ATO
+  - Account Protection
+  - Fraud Prevention
+  tags_raw:
   - ATO
   - Account Protection
   - Fraud
@@ -116,7 +132,6 @@ apis:
 
     Protect.
   humanURL: https://datadome.co/products/ad-protect/
-  baseURL: https://datadome.co
   tags:
   - Ad Fraud
   - IVT
@@ -135,7 +150,6 @@ apis:
 
     data exfiltration from sensitive pages such as checkout and account.
   humanURL: https://datadome.co/products/page-protect/
-  baseURL: https://datadome.co
   tags:
   - Client-Side Security
   - PCI DSS 4
@@ -157,7 +171,6 @@ apis:
 
     and API surfaces.
   humanURL: https://datadome.co/products/agentic-trust/
-  baseURL: https://datadome.co
   tags:
   - AI Agents
   - LLM
@@ -179,7 +192,6 @@ apis:
 
     campaigns.
   humanURL: https://datadome.co/products/ddos-protect/
-  baseURL: https://datadome.co
   tags:
   - DDoS
   - Layer-7
@@ -265,7 +277,7 @@ apis:
   name: DataDome Account API
   description: The Account API from DataDome — 4 operation(s) for account.
   humanURL: https://datadome.co/products/bot-protect/
-  baseURL: https://datadome.co
+  baseURL: https://api-management.datadome.co
   tags:
   - Account
   properties:
@@ -275,7 +287,7 @@ apis:
   name: DataDome AccountProtect API
   description: The AccountProtect API from DataDome — 1 operation(s) for accountprotect.
   humanURL: https://datadome.co/products/bot-protect/
-  baseURL: https://datadome.co
+  baseURL: https://api-management.datadome.co
   tags:
   - AccountProtect
   properties:
@@ -285,7 +297,7 @@ apis:
   name: DataDome Endpoints API
   description: The Endpoints API from DataDome — 2 operation(s) for endpoints.
   humanURL: https://datadome.co/products/bot-protect/
-  baseURL: https://datadome.co
+  baseURL: https://api-management.datadome.co
   tags: []
   tags_raw:
   - Endpoints
@@ -296,7 +308,7 @@ apis:
   name: DataDome Priorities API
   description: The Priorities API from DataDome — 3 operation(s) for priorities.
   humanURL: https://datadome.co/products/bot-protect/
-  baseURL: https://datadome.co
+  baseURL: https://api-management.datadome.co
   tags:
   - Priorities
   properties:
@@ -306,7 +318,7 @@ apis:
   name: DataDome Templates API
   description: The Templates API from DataDome — 2 operation(s) for templates.
   humanURL: https://datadome.co/products/bot-protect/
-  baseURL: https://datadome.co
+  baseURL: https://api-management.datadome.co
   tags:
   - Templates
   properties:
@@ -316,7 +328,7 @@ apis:
   name: DataDome TrustedProxies API
   description: The TrustedProxies API from DataDome — 2 operation(s) for trustedproxies.
   humanURL: https://datadome.co/products/bot-protect/
-  baseURL: https://datadome.co
+  baseURL: https://api-management.datadome.co
   tags:
   - TrustedProxies
   properties:
@@ -326,7 +338,7 @@ apis:
   name: DataDome VerifiedModels API
   description: The VerifiedModels API from DataDome — 1 operation(s) for verifiedmodels.
   humanURL: https://datadome.co/products/bot-protect/
-  baseURL: https://datadome.co
+  baseURL: https://api-management.datadome.co
   tags:
   - VerifiedModels
   properties:
@@ -336,10 +348,8 @@ apis:
   name: DataDome Custom Rules API
   description: The Custom Rules API from DataDome — 2 operation(s) for custom rules.
   humanURL: https://datadome.co/products/bot-protect/
-  baseURL: https://datadome.co
+  baseURL: https://js.datadome.co
   tags:
-  - CustomRules
-  tags_raw:
   - Custom Rules
   properties:
   - type: OpenAPI
