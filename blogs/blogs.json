@@ -3,11 +3,14 @@
   "feeds": [
     {
       "source": "https://docs.datadome.co/reference",
-      "error": "HTTPError"
+      "feed_url": "https://docs.datadome.co/reference",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
   "post_count": 6,
-  "fetched": "2026-09-19T20:17:39Z",
+  "fetched": "2026-10-03T12:30:02Z",
   "agent_pulled": "2026-06-27",
   "feed_nature": "vendor-blog",
   "feed_nature_basis": "path_blog",
