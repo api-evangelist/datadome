@@ -404,6 +404,12 @@ authentication:
   - type: SignedSensor
     description: Signed payloads exchanged between the JS tag/mobile SDK and DataDome decisioning.
 common:
+  - type: Plans
+    url: plans/datadome-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/datadome-rate-limits.yml
+  - type: FinOps
+    url: finops/datadome-finops.yml
   - type: AgenticAccess
     url: agentic-access/datadome-agentic-access.yml
   - type: DomainSecurity
