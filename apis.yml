@@ -85,7 +85,7 @@ apis:
   humanURL: https://datadome.co/products/bot-protect/
   tags:
   - Bot Management
-  - Scraping
+  - Web Scraping
   - Credential Stuffing
   - Machine Learning
   tags_raw:
@@ -350,6 +350,8 @@ apis:
   humanURL: https://datadome.co/products/bot-protect/
   baseURL: https://js.datadome.co
   tags:
+  - CustomRules
+  tags_raw:
   - Custom Rules
   properties:
   - type: OpenAPI
