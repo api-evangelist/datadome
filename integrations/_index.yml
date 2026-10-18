@@ -41,3 +41,16 @@
     detected: '2026-10-14'
   status: not-a-workflow
   arazzo: null
+- slug: datadome-kong-own
+  label: Kong (own)
+  partner: kong
+  partner_name: Kong (own)
+  category: Kong Plugin Hub
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://developer.konghq.com/plugins/datadome/
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
