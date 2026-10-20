@@ -6,24 +6,6 @@ checked:
 - kong/integrations/kong-integration-edges.yml
 marketplace_apps: []
 edges:
-- partner_name: AWS Marketplace
-  partner: amazon-web-services
-  partner_match: aggregator
-  type: marketplace
-  marketplace: aws-marketplace
-  channel: distribution
-  relationship: distribution-channel
-  direction: third-party
-  evidence: https://aws.amazon.com/marketplace/seller-profile?id=47a7364b-6109-4e46-b56d-905f99fb8477
-  listing_count: 4
-  apps:
-  - DataDome Bot Protect
-  - DataDome Bot Protect with Agent Trust
-  - DataDome Ad Protect
-  - DataDome Account Protect
-  seller_name: DataDome
-  detected_by: sweep-cloud-marketplaces.py
-  detected: '2026-10-13'
 - partner_name: IAB Europe TCF Global Vendor List
   partner: null
   partner_match: domain
@@ -67,5 +49,23 @@ edges:
   detected: '2026-10-18'
   detected_by: mirror-platform-listings.py
   category: Kong Plugin Hub
+- partner_name: AWS Marketplace
+  partner: amazon-web-services
+  partner_match: aggregator
+  type: marketplace
+  marketplace: aws-marketplace
+  channel: distribution
+  relationship: distribution-channel
+  direction: third-party
+  evidence: https://aws.amazon.com/marketplace/seller-profile?id=47a7364b-6109-4e46-b56d-905f99fb8477
+  listing_count: 4
+  apps:
+  - DataDome Bot Protect
+  - DataDome Ad Protect
+  - DataDome Bot Protect with Agent Trust
+  - DataDome Account Protect
+  seller_name: DataDome
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-13'
 source:
 - kong/integrations/kong-integration-edges.yml
