@@ -7,6 +7,8 @@ checked:
 - https://cloudsecurityalliance.org/membership/current
 - https://fidoalliance.org/certification/fido-certified-products/
 - https://www.cisa.gov/securebydesign/pledge/secure-design-pledge-signers
+- opentofu/integrations/opentofu-integration-edges.yml
+- terraform/integrations/terraform-integration-edges.yml
 marketplace_apps: []
 edges:
 - partner_name: IAB Europe TCF Global Vendor List
@@ -35,23 +37,6 @@ edges:
     detected: '2026-10-14'
   detected_by: sweep-adtech.py
   detected: '2026-10-14'
-- partner_name: Kong (own)
-  partner: kong
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://developer.konghq.com/plugins/datadome/
-  mirror_of: kong/integrations/kong-integration-edges.yml
-  apps:
-  - DataDome
-  listing_count: 1
-  detected: '2026-10-18'
-  detected_by: mirror-platform-listings.py
-  category: Kong Plugin Hub
 - partner_name: AWS Marketplace
   partner: amazon-web-services
   partner_match: aggregator
@@ -96,5 +81,60 @@ edges:
     identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
   detected_by: sweep-cloud-security-star.py
   first_seen: '2026-10-20'
+- partner_name: Kong (own)
+  partner: kong
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://developer.konghq.com/plugins/datadome/
+  mirror_of: kong/integrations/kong-integration-edges.yml
+  apps:
+  - DataDome
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Kong Plugin Hub
+- partner_name: OpenTofu (opentofu-registry)
+  partner: opentofu
+  partner_match: mirror
+  mirror_match: register
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: opentofu-registry
+  evidence: https://search.opentofu.org/provider/datadome/datadome
+  mirror_of: opentofu/integrations/opentofu-integration-edges.yml
+  apps:
+  - datadome/datadome
+  listing_count: 1
+  detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: infrastructure-as-code provider registry listing
+  badges:
+  - Verified publisher (GitHub domain-verified organization)
+- partner_name: Terraform (terraform-registry)
+  partner: terraform
+  partner_match: mirror
+  mirror_match: register
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: terraform-registry
+  evidence: https://registry.terraform.io/providers/DataDome/datadome
+  mirror_of: terraform/integrations/terraform-integration-edges.yml
+  apps:
+  - DataDome/datadome
+  listing_count: 1
+  detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: infrastructure-as-code provider registry listing
+  badges:
+  - Verified publisher (GitHub domain-verified organization)
 source:
 - kong/integrations/kong-integration-edges.yml
