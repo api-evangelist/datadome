@@ -1,4 +1,4 @@
-# DataDome (datadome)
+# DataDome
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -77,261 +77,148 @@ include Bot Protect, Account Protect, Ad Protect, Page Protect,
 Priority Protect, Agentic Trust (governing AI agent traffic), and
 DDoS Protect.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/datadome/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/datadome/refs/heads/main/apis.yml)
+**Areas:** Bot Mitigation · Fraud Prevention · Account Protection · Ad Fraud · DDoS · Real-Time · Edge Security · Application Security · Agentic Trust
 
-## Scope
+## DataDome on APIs.io
 
-- **Type:** Index
-- **Position:** Provider
-- **Access:** Commercial
+Everything profiled for DataDome is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/datadome/](https://apis.io/providers/datadome/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (17)
 
-- Bot Mitigation
-- Fraud Protection
-- Account Protection
-- Ad Fraud
-- DDoS
-- Real-Time
-- Edge Security
-- Application Security
-- Agentic Trust
+- [DataDome Bot Protect](https://apis.io/apis/datadome/bot-protect/) — Bot Protect is DataDome's core bot management product, scoring every request against the platform's threat intelligence and machine-learning models to…
+- [DataDome Account Protect](https://apis.io/apis/datadome/account-protect/) — Account Protect targets account takeover, fake account creation, and post-login abuse using behavioral, device, and credential signals layered on top of the…
+- [DataDome Ad Protect](https://apis.io/apis/datadome/ad-protect/) — Ad Protect filters invalid traffic from ad-supported properties and protects publishers and advertisers from automated click and impression fraud,…
+- [DataDome Page Protect](https://apis.io/apis/datadome/page-protect/) — Page Protect provides client-side security and Magecart / formjacking defense, inventorying third-party scripts and detecting unauthorized data exfiltration…
+- [DataDome Agentic Trust](https://apis.io/apis/datadome/agentic-trust/) — Agentic Trust is DataDome's product for managing AI-agent traffic, letting customers identify, authenticate, and govern interactions from autonomous agents…
+- [DataDome DDoS Protect](https://apis.io/apis/datadome/ddos-protect/) — DDoS Protect mitigates application-layer denial-of-service attacks using the same edge-distributed signal pipeline as Bot Protect, defending APIs and web…
+- [DataDome JavaScript Tag](https://apis.io/apis/datadome/js-tag/) — The DataDome JS tag collects browser, device, and behavioral signals that are forwarded to the DataDome decisioning service. The tag is configured per…
+- [DataDome Server Modules & SDKs](https://apis.io/apis/datadome/server-modules/) — DataDome ships 40+ server-side integrations (web servers, CDNs, application frameworks, API gateways) that forward each request to the DataDome decisioning…
+- [DataDome Mobile SDKs](https://apis.io/apis/datadome/mobile-sdks/) — Native iOS and Android SDKs (with React Native and Flutter wrappers) integrate with common HTTP libraries (OkHttp, Alamofire, Axios, Dio) so DataDome…
+- [DataDome Account API](https://apis.io/apis/datadome/datadome-account-api/) — The Account API from DataDome — 4 operation(s) for account.
+- [DataDome AccountProtect API](https://apis.io/apis/datadome/datadome-accountprotect-api/) — The AccountProtect API from DataDome — 1 operation(s) for accountprotect.
+- [DataDome Endpoints API](https://apis.io/apis/datadome/datadome-endpoints-api/) — The Endpoints API from DataDome — 2 operation(s) for endpoints.
+- [DataDome Priorities API](https://apis.io/apis/datadome/datadome-priorities-api/) — The Priorities API from DataDome — 3 operation(s) for priorities.
+- [DataDome Templates API](https://apis.io/apis/datadome/datadome-templates-api/) — The Templates API from DataDome — 2 operation(s) for templates.
+- [DataDome TrustedProxies API](https://apis.io/apis/datadome/datadome-trustedproxies-api/) — The TrustedProxies API from DataDome — 2 operation(s) for trustedproxies.
+- [DataDome VerifiedModels API](https://apis.io/apis/datadome/datadome-verifiedmodels-api/) — The VerifiedModels API from DataDome — 1 operation(s) for verifiedmodels.
+- [DataDome Custom Rules API](https://apis.io/apis/datadome/datadome-custom-rules-api/) — The Custom Rules API from DataDome — 2 operation(s) for custom rules.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-23
-- **Modified:** 2026-05-23
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### MCP servers (1)
 
-### DataDome Bot Protect
+Model Context Protocol servers that expose the API to agents.
 
-Bot Protect is DataDome's core bot management product, scoring
-every request against the platform's threat intelligence and
-machine-learning models to classify and block automated traffic
-(scraping, credential stuffing, inventory hoarding, fake account
-creation, content theft) without adding latency to good traffic.
+- [datadome](https://apis.io/servers/datadome/datadome/)
 
-- **Human URL:** [https://datadome.co/products/bot-protect/](https://datadome.co/products/bot-protect/)
-- **Base URL:** `https://datadome.co`
+#### Agentic access (1)
 
-#### Tags
+Which operations an agent can call, which act, and which need a human in the loop.
 
-- Bot Management
-- Scraping
-- Credential Stuffing
-- ML
+- [Datadome Agentic Access](https://apis.io/agentic-access/datadome/datadome-agentic-access/)
 
-#### Properties
+#### Collections (9)
 
-- [Product Page](https://datadome.co/products/bot-protect/)
-- [Documentation](https://docs.datadome.co/)
-- [Postman Collection](collections/datadome.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/datadome.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Postman and Open Collection request collections.
 
-### DataDome Account Protect
+- [DataDome Management API](https://apis.io/collections/datadome/open-datadome/)
+- [DataDome Management Account API](https://apis.io/collections/datadome/open-datadome-account-api/)
+- [DataDome Management Account AccountProtect API](https://apis.io/collections/datadome/open-datadome-accountprotect-api/)
+- [DataDome Management Account CustomRules API](https://apis.io/collections/datadome/open-datadome-customrules-api/)
+- [DataDome Management Account Endpoints API](https://apis.io/collections/datadome/open-datadome-endpoints-api/)
+- [DataDome Management Account Priorities API](https://apis.io/collections/datadome/open-datadome-priorities-api/)
+- [DataDome Management Account Templates API](https://apis.io/collections/datadome/open-datadome-templates-api/)
+- [DataDome Management Account TrustedProxies API](https://apis.io/collections/datadome/open-datadome-trustedproxies-api/)
+- [DataDome Management Account VerifiedModels API](https://apis.io/collections/datadome/open-datadome-verifiedmodels-api/)
 
-Account Protect targets account takeover, fake account creation,
-and post-login abuse using behavioral, device, and credential
-signals layered on top of the Bot Protect decisioning core.
+#### Security (2)
 
-- **Human URL:** [https://datadome.co/products/account-protect/](https://datadome.co/products/account-protect/)
-- **Base URL:** `https://datadome.co`
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Tags
+- [Datadome Authentication](https://apis.io/security/datadome/datadome-authentication/)
+- [Datadome Domain Security](https://apis.io/security/datadome/datadome-domain-security/)
 
-- ATO
-- Account Protection
-- Fraud
+#### Plans and pricing (1)
 
-#### Properties
+Published plans, tiers and prices.
 
-- [Product Page](https://datadome.co/products/account-protect/)
-- [Documentation](https://docs.datadome.co/)
-- [Postman Collection](collections/datadome.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/datadome.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Datadome Plans Pricing](https://apis.io/plans/datadome/datadome-plans-pricing/)
 
-### DataDome Ad Protect
+#### Rate limits (1)
 
-Ad Protect filters invalid traffic from ad-supported properties
-and protects publishers and advertisers from automated click and
-impression fraud, leveraging the same signal pipeline as Bot
-Protect.
+Published request limits.
 
-- **Human URL:** [https://datadome.co/products/ad-protect/](https://datadome.co/products/ad-protect/)
-- **Base URL:** `https://datadome.co`
+- [Datadome Rate Limits](https://apis.io/rate-limits/datadome/datadome-rate-limits/)
 
-#### Tags
+#### FinOps (1)
 
-- Ad Fraud
-- IVT
-- Click Fraud
+What the API costs to run, by operation.
 
-#### Properties
+- [Datadome Finops](https://apis.io/finops/datadome/datadome-finops/)
 
-- [Product Page](https://datadome.co/products/ad-protect/)
-- [Documentation](https://docs.datadome.co/)
-- [Postman Collection](collections/datadome.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/datadome.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+## Where to find this API
 
-### DataDome Page Protect
-
-Page Protect provides client-side security and Magecart / formjacking
-defense, inventorying third-party scripts and detecting unauthorized
-data exfiltration from sensitive pages such as checkout and account.
-
-- **Human URL:** [https://datadome.co/products/page-protect/](https://datadome.co/products/page-protect/)
-- **Base URL:** `https://datadome.co`
-
-#### Tags
-
-- Client-Side Security
-- PCI DSS 4
-- Magecart
-- Supply Chain
-
-#### Properties
-
-- [Product Page](https://datadome.co/products/page-protect/)
-- [Documentation](https://docs.datadome.co/)
-- [Postman Collection](collections/datadome.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/datadome.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### DataDome Agentic Trust
-
-Agentic Trust is DataDome's product for managing AI-agent traffic,
-letting customers identify, authenticate, and govern interactions
-from autonomous agents and LLM-driven crawlers against their web
-and API surfaces.
-
-- **Human URL:** [https://datadome.co/products/agentic-trust/](https://datadome.co/products/agentic-trust/)
-- **Base URL:** `https://datadome.co`
-
-#### Tags
-
-- AI Agents
-- LLM
-- Agentic Traffic
-- Governance
-
-#### Properties
-
-- [Product Page](https://datadome.co/products/agentic-trust/)
-- [Documentation](https://docs.datadome.co/)
-- [Postman Collection](collections/datadome.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/datadome.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### DataDome DDoS Protect
-
-DDoS Protect mitigates application-layer denial-of-service attacks
-using the same edge-distributed signal pipeline as Bot Protect,
-defending APIs and web properties against high-volume automated
-campaigns.
-
-- **Human URL:** [https://datadome.co/products/ddos-protect/](https://datadome.co/products/ddos-protect/)
-- **Base URL:** `https://datadome.co`
-
-#### Tags
-
-- DDoS
-- Layer 7
-- Availability
-
-#### Properties
-
-- [Product Page](https://datadome.co/products/ddos-protect/)
-- [Documentation](https://docs.datadome.co/)
-- [Postman Collection](collections/datadome.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/datadome.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### DataDome JavaScript Tag
-
-The DataDome JS tag collects browser, device, and behavioral
-signals that are forwarded to the DataDome decisioning service.
-The tag is configured per property and loaded asynchronously to
-avoid impacting page performance.
-
-- **Human URL:** [https://docs.datadome.co/docs/integration-js-tag](https://docs.datadome.co/docs/integration-js-tag)
-- **Base URL:** `https://js.datadome.co`
-
-#### Tags
-
-- JavaScript Tag
-- Client Signals
-- Frontend
-
-#### Properties
-
-- [Documentation](https://docs.datadome.co/docs/integration-js-tag)
-- [Postman Collection](collections/datadome.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/datadome.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### DataDome Server Modules & SDKs
-
-DataDome ships 40+ server-side integrations (web servers, CDNs,
-application frameworks, API gateways) that forward each request
-to the DataDome decisioning service and apply the returned verdict.
-These cover Nginx, Apache, IIS, OpenResty, HAProxy, Cloudflare
-Workers, AWS CloudFront, Fastly, Bunny, Node.js, Python ASGI, Go,
-Ruby, Java, ASP.NET Core, Kong, Apigee, Tyk, and Traefik.
-
-- **Human URL:** [https://docs.datadome.co/docs/integration-overview](https://docs.datadome.co/docs/integration-overview)
-- **Base URL:** `https://docs.datadome.co`
-
-#### Tags
-
-- Server SDK
-- CDN
-- API Gateway
-- Reverse Proxy
-
-#### Properties
-
-- [Documentation](https://docs.datadome.co/docs/integration-overview)
-- [GitHub Organization](https://github.com/DataDome)
-- [Postman Collection](collections/datadome.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/datadome.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### DataDome Mobile SDKs
-
-Native iOS and Android SDKs (with React Native and Flutter
-wrappers) integrate with common HTTP libraries (OkHttp, Alamofire,
-Axios, Dio) so DataDome verdicts can be applied to mobile API
-traffic, not just web requests.
-
-- **Human URL:** [https://docs.datadome.co/docs/integration-mobile-sdk](https://docs.datadome.co/docs/integration-mobile-sdk)
-- **Base URL:** `https://docs.datadome.co`
-
-#### Tags
-
-- Mobile SDK
-- iOS
-- Android
-- React Native
-- Flutter
-
-#### Properties
-
-- [Documentation](https://docs.datadome.co/docs/integration-mobile-sdk)
-- [GitHub Organization](https://github.com/DataDome)
-- [Postman Collection](collections/datadome.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/datadome.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://datadome.co/)
-- [Products](https://datadome.co/products/)
 - [Documentation](https://docs.datadome.co/)
-- [API Reference](https://docs.datadome.co/reference)
+- [API reference](https://docs.datadome.co/reference)
 - [Blog](https://datadome.co/blog/)
-- [GitHub Organization](https://github.com/DataDome)
-- [LinkedIn](https://www.linkedin.com/company/datadome/)
-- [Twitter](https://twitter.com/datadome)
-- [Status](https://status.datadome.co/)
-- [Contact](https://datadome.co/contact/)
-- [L L Ms Txt](https://docs.datadome.co/llms.txt)
+- [GitHub](https://github.com/DataDome)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 22.9** — emerging · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.7 |
+| Contract quality | 43.2 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 22.6 |
+| Access clarity | 5.3 |
+
+**Agent readiness 43.9** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/datadome/](https://apis.io/providers/datadome/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for DataDome: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/datadome/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
